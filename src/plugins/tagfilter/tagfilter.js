@@ -214,7 +214,6 @@ const componentName = "wb-tagfilter",
 		if ( controlSettings.group !== undefined ) {
 			return controlSettings.group;
 		}
-
 		return control.name;
 	},
 
@@ -248,7 +247,6 @@ $document.on( "change", selectorCtrl, function( event )  {
 			break;
 
 		case "radio":
-
 			// Set all virtual radio items to unchecked
 			filterGroup.forEach( function( filterItem ) {
 				if ( controlName === filterItem.name ) {
@@ -263,7 +261,6 @@ $document.on( "change", selectorCtrl, function( event )  {
 			break;
 
 		case "select-one":
-
 			// Update virtual filter to the new value
 			filterGroup.find( function( filterItem ) {
 				return filterItem.name === controlName;
